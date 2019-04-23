@@ -1,0 +1,16 @@
+
+$small: 480px;
+
+$medium: 768px;
+
+@media screen and (max-device-width : $small) {
+	.home-grid-container {
+		border: 10px solid blue;
+	}  
+}
+
+@media screen and (min-device-width : $small) and (max-device-width : $medium) {
+	.home-grid-container {
+		border: 10px solid green;
+	}
+}

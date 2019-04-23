@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Nunito';
+  font-weight: normal;
+  src: url('../assets/fonts/Nunito/Nunito-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-weight: normal;
+	src: url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'Poppins-Bold';
+	font-weight: bold;
+	src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
+
+%font-extend {
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-size: 2rem;
+	display: inline;
+
+} 
+
+%font-p {
+	font-family: 'Nunito', sans-serif;
+	color: $textColor;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	margin: 15px 0px 15px;
+}
+
+%text-header-banner {
+	font-family: 'Poppins-Bold', sans-serif;
+	font-size: 2rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 60px 0px 60px;
+
+}
+
+%small-text {
+	font-family: 'Nunito', sans-serif;
+	color: $altText;
+	font-size: 0.6rem;
+	margin-bottom: 10px;
+
+}
+
+
+
+
+/////////////////////////////////////////////// HOME PAGE
+.hero-text {
+	@extend %font-extend;
+	color: $whiteColor;
+	font-size: 2.5rem;
+	.squared-dot {
+		color: $pinkColor;
+		font-size: 4rem;
+	}
+}
+
+.text-italic {
+		font-family: Georgia, serif;
+		font-style: italic;
+		color: $turquoiseColor;
+	}
+
+
+/////////////////////////////////////////////// EVERY PAGE
+
+p {
+	@extend %font-p;
+}
+
+.hero-image p {
+	font-size: 1rem;
+}
+
+h3 {
+	font-family: 'Nunito', sans-serif;
+
+}
+
+
+.small-text {
+	@extend %small-text;
+}
+
+
+aside {
+	@extend %font-p;
+	font-weight: bold;
+	padding-top: 20px;
+
+}
+
+.home-grid-container {
+	text-align: center;
+}
+
+.continue {
+	@extend %small-text;
+	font-size: 0.8rem;
+	margin: 0px 0px 30px;
+}
+

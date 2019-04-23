@@ -1,0 +1,163 @@
+
+
+/////////////////////////////////////////////// EVERY PAGE
+
+.top-header {
+	padding: 30px 0px 20px;
+	overflow: auto;
+}
+
+
+h4 {
+	@extend %font-extend;
+	padding-top: 10px;
+}
+
+
+//nav
+.navigation-menu {
+	float: right;
+
+	.main-navigation {
+		display: flex;
+	}
+
+
+	a {
+		text-decoration: none;
+		@extend %font-p;
+		font-size: 100%;
+		margin: 10px 0px 0px 15px;
+	}
+
+	a:hover {
+		color: $pinkColor;
+		transition: 0.3s ease;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+
+	//checkbox input
+	#menu-toggle {
+	 	display: none;
+	}
+
+}
+
+
+////////////////////// MOBILE VIEW
+
+@media screen and (max-width: 600px) {
+
+	.top-header {
+		padding-bottom: 0px;
+	}
+
+	//div: don't show the menu when the screen is < 600px. Instead, show the hamburg icon.
+	.navigation-menu .main-navigation {
+		display: none;
+	}
+
+
+	//nav: until the icon is not pressed, the nav will contain only the icon itself.
+	.navigation-menu {
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+
+		.hamburger-icon {
+			display: inline-block;
+			cursor: pointer;
+			font-size: 30px;
+			color: $turquoiseColor;
+			margin: 10px;
+		}
+
+		.hamburger-icon:hover {
+			color: $pinkColor;
+			transition: 0.3s ease;
+		}
+	} //.navigation-menu 
+
+
+	
+	#menu-toggle:checked + .main-navigation {
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			line-height: 1.7rem;
+			margin: 0px 30% 10px;
+		}
+	} //#menu-toggle:checked + .main-navigation
+	
+
+	h4 {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+
+} //@media screen and (max-width: 600px) {
+
+
+
+
+/////////////////////////////////////////////// HOME PAGE
+
+.hero-image {
+	background-image: url('../assets/hero.jpeg');
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin: 0px auto;
+	border: 5px solid pink;
+
+	padding: 25% 3% 25%;
+	
+	
+	background-color: lightgrey;
+	
+}
+
+
+/////////////////////////////////////////////// CONTACT AND BLOG PAGES
+
+.header-banner {
+	background-color: $softPinkColor;
+	@extend %text-header-banner;
+
+	@media screen and (max-width: 600px) { 
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

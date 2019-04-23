@@ -1,0 +1,21 @@
+
+%pinkButtons {
+		background-color: $softPinkColor;
+		border-radius: 50px;
+		padding: 10px 12px 8px;
+		margin: 0px 8px 0px;
+}
+
+
+.button {
+	@extend %pinkButtons;
+    color: $textColor;
+    text-align: center;
+}
+
+
+.button:hover {
+		background-color: $pinkColor;
+	}
+
+
